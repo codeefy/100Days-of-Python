@@ -12,6 +12,7 @@ A single line containing a positive integer, .
 Constraints
 
 Output Format
+Hacker Rank LINK : https://www.hackerrank.com/challenges/py-if-else/problem
 
 Print Weird if the number is weird. Otherwise, print Not Weird."""
 

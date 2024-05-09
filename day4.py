@@ -15,3 +15,12 @@ print(digit)
 # still 12 >9 then again devied and gives intergral part 1 
 # and the digit becomes 4 finally 
 # now the while loop end ! 
+
+
+#find the digit of a number using for loop not ideal but possible
+num=abs(int(input()))
+strNUm=str(num)
+digit=0
+for char in strNUm:
+    digit=digit+1
+print(digit)

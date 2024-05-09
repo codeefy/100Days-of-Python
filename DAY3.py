@@ -14,6 +14,7 @@ else:
 
 
 
+
 # #find the factorial of a number using for loop
 num=int(input("enter a num:"))
 fact=1

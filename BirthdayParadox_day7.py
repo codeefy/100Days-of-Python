@@ -1,3 +1,4 @@
+# birthday paradox problem using computational concept
 import random
 l=[]
 #create an empty list

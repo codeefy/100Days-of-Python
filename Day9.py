@@ -16,3 +16,5 @@ def is_leap(year): # created a function
 # Testing the function
 year=int(input("Enter a year: "))  
 print(is_leap(year)) # True # calling the function
+
+# Output:

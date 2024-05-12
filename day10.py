@@ -3,7 +3,7 @@
 #you are required to find the runner-up score. You are given scores. 
 #Store them in a list and find the score of the runner-up.
 
-#https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=false
+#link - https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=false
 
 
 

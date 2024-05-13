@@ -1,5 +1,4 @@
 # Description: This file contains the solution to the problem of finding the sum of the elements in a list
-
 arr=[2,3,4,5,5,6]
 sum=0
 for i in range(len(arr)):

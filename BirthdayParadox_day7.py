@@ -3,8 +3,8 @@ import random
 l=[]
 #create an empty list
 
-for i in range(30):
-    l.append(random.randint(1,365))
+for i in range(30): 
+    l.append(random.randint(1,365))  
     #add random numbers to the list between 1 and 365
     #append 30 of them 
 l.sort()

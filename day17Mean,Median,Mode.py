@@ -1,4 +1,7 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+# https://www.hackerrank.com/challenges/s10-basic-statistics/problem?isFullScreen=true
+# The first line contains an integer, , denoting the number of elements in the array.
+# The second line contains  space-separated integers describing the respective elements of the array.
 from collections import Counter #import the Counter class from the collections module to count the frequency of elements in a list
 
 import numpy as np

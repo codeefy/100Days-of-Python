@@ -19,3 +19,12 @@ def initialize_mat(dim):
         for j in range(dim): #for j in the range of the dimension 
             c[i].append(0) #add 0 to the ith list of c
     return c  #return the resultant matrix
+def matrix_multiplication(u,v):
+    dim=len(u) #get the dimension of the matrix u 
+    ans=0 #initialise the answer to 0   
+    for i in range(dim): #for i in the range of the dimension 
+        ans=ans+(u[i]*v[i]) #multiply the ith element of u with the ith element of v and add it to the answer
+    return ans # return the answer 
+x=[1,2,3] #first matrix
+y=[4,5,6] #second matrix
+print(matrix_multiplication(x,y)) #print the product of the two matrices

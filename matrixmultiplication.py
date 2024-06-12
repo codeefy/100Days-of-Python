@@ -12,9 +12,10 @@
 #output= [[[0,0,0],[],[]]] it gives 0 to the first list of c 
 #now i need to add 0 to the second and third list of c using for loop 
 def initialize_mat(dim):
-    c=[]
-    for i in range(dim):
-        c.append([])
-    for i in range(dim):
-        c[i].append(0)
-    return c
+    c=[] #initialise an empty list
+    for i in range(dim): 
+        c.append([]) #add an empty list to c
+    for i in range(dim): #for i in the range of the dimension 
+        for j in range(dim): #for j in the range of the dimension 
+            c[i].append(0) #add 0 to the ith list of c
+    return c  #return the resultant matrix

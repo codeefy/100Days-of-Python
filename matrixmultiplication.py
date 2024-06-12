@@ -28,7 +28,22 @@ def dor_product(u,v):
 #x=[1,2,3] #first matrix
 #y=[4,5,6] #second matrix
 #print(matrix_multiplication(x,y)) #print the product of the two matrices
-def row(M,i):
-    dim=len(u)
+def row(M,i): #function to get the ith row of the matrix M
+    dim=len(M) #get the dimension of the matrix M
+    l=[] #initialise an empty list
+    for k in range(dim): #for k in the range of the dimension 
+        l.append(M[i][k]) #add the kth element of the ith row of M to l 
+    return l  #return the ith row of M 
+#M=[[1,2,3],[4,5,6],[7,8,9]] #matrix M
+##print(row(M,0)) #print the second row of M
+#output=[1,2,3]
+def column(M,j):
+    dim=len(M)
     l=[]
-    
+    for k in range(dim):
+        l.append(M[k][j]) #add the kth element of the jth column of M to l
+    return l #return the jth column of M 
+#M=[[1,2,3],[4,5,6],[7,8,9]] #matrix M
+#print(column(M,0)) #print the first column of M
+#output=[1,4,7]
+

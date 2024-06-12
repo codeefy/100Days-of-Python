@@ -57,3 +57,4 @@ def mat_mul(A,B): #function to multiply two matrices A and B
 A=[[1,2,3],[4,5,6],[7,8,9]]
 B=[[1,2,3],[4,5,6],[7,8,9]]
 print(mat_mul(A,B)) 
+#output=[[30,36,42],[66,81,96],[102,126,150]]

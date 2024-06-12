@@ -19,7 +19,7 @@ def initialize_mat(dim):
         for j in range(dim): #for j in the range of the dimension 
             c[i].append(0) #add 0 to the ith list of c
     return c  #return the resultant matrix
-def dor_product(u,v):
+def dot_product(u,v):
     dim=len(u) #get the dimension of the matrix u 
     ans=0 #initialise the answer to 0   
     for i in range(dim): #for i in the range of the dimension 
@@ -46,4 +46,14 @@ def column(M,j):
 #M=[[1,2,3],[4,5,6],[7,8,9]] #matrix M
 #print(column(M,0)) #print the first column of M
 #output=[1,4,7]
-
+def mat_mul(A,B): #function to multiply two matrices A and B
+    dim=len(A) #get the dimension of the matrix A 
+    C=initialize_mat(dim) #initialise the resultant matrix C
+    for i in range(dim): #for i in the range of the dimension
+        for j in range(dim):    #for j in the range of the dimension
+            #c[i][j]=ith row of A * jth column of B
+            C[i][j]=dot_product(row(A,i),column(B,j)) #multiply the ith row of A with the jth column of B and store the result in the ith row and jth column of C  
+    return C #return the resultant matrix C 
+A=[[1,2,3],[4,5,6],[7,8,9]]
+B=[[1,2,3],[4,5,6],[7,8,9]]
+print(mat_mul(A,B)) 

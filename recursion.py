@@ -34,10 +34,11 @@ print(count_all(s))"""
 #input 'circle area 7' output 153.94 
 #input 'rectangle area  15 10' output 150 
 # exit output stop execution  
+"""PI=22/7
 def circle_area(r):
-    return 3.14*r*r
+    return PI*r*r
 def circle_perimeter(r):
-    return 2*3*14*r
+    return 2*PI*r
 def recangle_area(l,b):
     return l*b
 def perimeter(l,b):
@@ -46,7 +47,7 @@ while True:
     s=input().split()
     if s[0]=="circle":
         if s[1]=="area":
-            print(circle_area(float(s[2])))
+            print(circle_area(round(float(s[2]))))
         else:
             print(circle_perimeter(float(s[2])))
     elif s[0]=="rectangle":
@@ -55,4 +56,21 @@ while True:
         else:
             print(perimeter(float(s[2]),float(s[3])))
     else:
-        break
+        break"""
+
+    #write a pyhton code using function which check whether the input 
+    # cordinates for a triangle or not 
+    #input (0,0),(0,1),(1,0) output yes
+    #(2,3),(3,2),(2,3) output no 
+    #(0,0),(10,0),(0,0.0001) output no
+
+def check_triangle(x1,y1,x2,y2,x3,y3):
+    if (x1==x2 and y1==y2) or (x2==x3 and y2==y3) or (x1==x3 and y1==y3):
+        return "no"
+    else:
+        return "yes"
+x1,y1=map(float,input().split())
+x2,y2=map(float,input().split())
+x3,y3=map(float,input().split())
+print(check_triangle(x1,y1,x2,y2,x3,y3))
+

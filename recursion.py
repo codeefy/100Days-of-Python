@@ -63,14 +63,17 @@ while True:
     #input (0,0),(0,1),(1,0) output yes
     #(2,3),(3,2),(2,3) output no 
     #(0,0),(10,0),(0,0.0001) output no
-
+import math
 def check_triangle(x1,y1,x2,y2,x3,y3):
-    if (x1==x2 and y1==y2) or (x2==x3 and y2==y3) or (x1==x3 and y1==y3):
-        return "no"
-    else:
+    #calculate using distance formula 
+    d=math.sqrt((x2-x1)**2+(y2-y1)**2)
+    e=math.sqrt((x3-x2)**2+(y3-y2)**2)
+    f=math.sqrt((x1-x3)**2+(y1-y3)**2)
+    if d+e>f and e+f>d and f+d>e:
         return "yes"
-x1,y1=map(float,input().split())
-x2,y2=map(float,input().split())
-x3,y3=map(float,input().split())
-print(check_triangle(x1,y1,x2,y2,x3,y3))
+    else:
+        return "no"
+print(check_triangle(0,0,0,1,1,0))
+
+
 

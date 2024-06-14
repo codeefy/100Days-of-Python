@@ -74,7 +74,7 @@ def check_triangle(x1,y1,x2,y2,x3,y3):
     else:
         return "no"
 print(check_triangle(0,0,0,1,1,0))
-m
+
 
 
 

@@ -16,7 +16,7 @@ print(round(numpy.linalg.det(arr), 2))
 #0.0"""
 
 import calendar
-print(calendar.TextCalendar(firstweekday=6).formatyear(2015))
+#print(calendar.TextCalendar(firstweekday=6).formatyear(2015))
 
 #A single line of input containing the space separated month, day and year, respectively, in MM DD year format.
 #08 05 2015

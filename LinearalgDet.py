@@ -27,3 +27,31 @@ print(calendar.day_name[calendar.weekday(y, m, d)].upper())  #calendar.day_name 
 #calendar.weekday() is used to get the day of the week.
 # .weekday() is used to get the day of the week.   
  # .upper() is used to convert the output to uppercase letters.
+
+#3 captlize the first letter of each word in a string the string consists of alphanumeric characters and spaces.
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the solve function below.
+def solve(s):  
+    def capitalize_word(match): #capitalize_word is a function that takes a match object as an argument.
+        word = match.group(0) #match.group(0) is used to get the matched string.
+        if word[0].isdigit(): #isdigit() is used to check if the first character of the word is a digit.  
+            return word  #If the first character is a digit, the word is returned as it is.
+        else:
+            return word.capitalize() #If the first character is not a digit, the word is capitalized.
+
+    return re.sub(r'\b\w+\b', capitalize_word, s) #re.sub() is used to replace all the words in the string that match the pattern with the result of the capitalize_word function.  
+    #\b is used to match the boundary of a word. 
+    #\w+ is used to match one or more word characters.
+    #\b is used to match the boundary of a word.
+    #capitalize_word is used to capitalize the first letter of each word.
+    #s is the input string.
+    s=input()
+    result = solve(s)
+    print(result)
+    
+    

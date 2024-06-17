@@ -50,9 +50,9 @@ def rock_paper_scissors():
                 print("You lose")   #print you lose
                 computer_score+=1  #increment the computer score by 1 
         print("Player score: ",player_score)  #print the player score
-        print("Computer score: ",computer_score)
-        play_again=input("Do you want to play again? ")
-        if play_again.lower()!="yes":
+        print("Computer score: ",computer_score) #print the computer score  
+        play_again=input("Do you want to play again? ") #ask the player if they want to play again  
+        if play_again.lower()!="yes": #if the player input is not yes
             break
 rock_paper_scissors()
 

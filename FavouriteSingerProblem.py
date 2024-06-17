@@ -10,8 +10,8 @@ def count_favourite_singers(playlist):  #function to count the favourite singers
             singer_count[singer] = 1  #add the singer to the singer count and set the count to 1
 
     max_count = max(singer_count.values()) #get the maximum count of the singers
-    favourite_singers_count = sum(1 for count in singer_count.values() if count == max_count)
+    favourite_singers_count = sum(1 for count in singer_count.values() if count == max_count) # get the count of the favourite singers  and sum it  if the count is equal to the maximum count
     
-    return favourite_singers_count 
+    return favourite_singers_count  #return the count of the favourite singers
 
-print(count_favourite_singers(playlist))
+print(count_favourite_singers(playlist)) #print the count of the favourite singers in the playlist

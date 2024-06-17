@@ -15,7 +15,7 @@
 #Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.
 
 
-import random
+import random  #import the random module to generate random numbers 
 def rock_paper_scissors():
     player_score=0
     computer_score=0

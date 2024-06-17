@@ -10,6 +10,6 @@
 #The minigame should inform the player whether the player won, lost, or tied with the opponent.
 #Choose to continue playing.
 #At the prompt, type screen.
-The minigame should inform the player if the option entered by the player is invalid.
+#the minigame should inform the player if the option entered by the player is invalid.
 Repeat steps 2 and 4 to play a few rounds and choose not to continue playing.
 Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.

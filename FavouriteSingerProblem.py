@@ -1,3 +1,6 @@
+# Description: A program that takes an integer n and a list of n strings as input and returns the number of favourite singers in the list. A favourite singer is a singer that appears the most number of times in the list. If there are multiple singers that appear the most number of times, then all of them are considered favourite singers.
+#  
+# Input: The input consists of two lines. The first line contains an integer n (1 ≤ n ≤ 100) which represents the number of singers in the list. The second line contains n strings separated by a space, which represents the list of singers. Each singer is a string of lowercase English letters with a length of at most 100.
 name = int(input())  # get the input from the user  
 playlist = input().split(" ")  # get the input from the user and split it by space  
 

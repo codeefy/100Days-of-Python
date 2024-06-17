@@ -48,8 +48,8 @@ def rock_paper_scissors():
                 player_score+=1     #increment the player score by 1
             else:   #if the computer input is not rock 
                 print("You lose")   #print you lose
-                computer_score+=1
-        print("Player score: ",player_score)
+                computer_score+=1  #increment the computer score by 1 
+        print("Player score: ",player_score)  #print the player score
         print("Computer score: ",computer_score)
         play_again=input("Do you want to play again? ")
         if play_again.lower()!="yes":

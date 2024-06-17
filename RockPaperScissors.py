@@ -16,12 +16,12 @@
 
 
 import random  #import the random module to generate random numbers 
-def rock_paper_scissors():
-    player_score=0
-    computer_score=0
-    while True:
-        player=input("Enter rock, paper or scissors: ")
-        computer=random.choice(["rock","paper","scissors"])
+def rock_paper_scissors(): 
+    player_score=0 #initialise the player score to 0
+    computer_score=0    #initialise the computer score to 0
+    while True: #while the condition is true  
+        player=input("Enter rock, paper or scissors: ") #get the input from the player
+        computer=random.choice(["rock","paper","scissors"]) #get the input from the computer
         print("Computer chose: ",computer)
         if player.lower() not in ["rock","paper","scissors"]:
             print("Invalid option")

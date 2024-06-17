@@ -53,8 +53,8 @@ def rock_paper_scissors():
         print("Computer score: ",computer_score) #print the computer score  
         play_again=input("Do you want to play again? ") #ask the player if they want to play again  
         if play_again.lower()!="yes": #if the player input is not yes
-            break
-rock_paper_scissors()
+            break # break the loop 
+rock_paper_scissors() #call the function rock_paper_scissors    
 
 #output
 #Enter rock, paper or scissors: rock

@@ -25,16 +25,16 @@ def rock_paper_scissors():
         print("Computer chose: ",computer) # print the choice of the computer  
         if player.lower() not in ["rock","paper","scissors"]: #if the player input is not in the list 
             print("Invalid option") #print invalid option
-            continue
-        if player.lower()==computer:
-            print("Tie")
-        elif player.lower()=="rock":
-            if computer=="scissors":
-                print("You win")
-                player_score+=1
-            else:
-                print("You lose")
-                computer_score+=1
+            continue #continue the loop  
+        if player.lower()==computer: #if the player input is equal to the computer input  
+            print("Tie")     #print tie  
+        elif player.lower()=="rock": #if the player input is rock
+            if computer=="scissors": #if the computer input is scissors     
+                print("You win")    #print you win
+                player_score+=1     #increment the player score by 1 
+            else: #if the computer input is not scissors 
+                print("You lose")  #print you lose
+                computer_score+=1  #increment the computer score by 1
         elif player.lower()=="scissors":
             if computer=="paper":
                 print("You win")

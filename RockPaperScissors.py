@@ -22,7 +22,7 @@ def rock_paper_scissors():
     while True: #while the condition is true  
         player=input("Enter rock, paper or scissors: ") #get the input from the player
         computer=random.choice(["rock","paper","scissors"]) #get the input from the computer
-        print("Computer chose: ",computer)
+        print("Computer chose: ",computer) # print the choice of the computer  
         if player.lower() not in ["rock","paper","scissors"]:
             print("Invalid option")
             continue

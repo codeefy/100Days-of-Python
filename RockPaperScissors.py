@@ -23,8 +23,8 @@ def rock_paper_scissors():
         player=input("Enter rock, paper or scissors: ") #get the input from the player
         computer=random.choice(["rock","paper","scissors"]) #get the input from the computer
         print("Computer chose: ",computer) # print the choice of the computer  
-        if player.lower() not in ["rock","paper","scissors"]:
-            print("Invalid option")
+        if player.lower() not in ["rock","paper","scissors"]: #if the player input is not in the list 
+            print("Invalid option") #print invalid option
             continue
         if player.lower()==computer:
             print("Tie")

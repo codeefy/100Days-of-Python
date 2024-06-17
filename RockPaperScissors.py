@@ -38,16 +38,16 @@ def rock_paper_scissors():
         elif player.lower()=="scissors": #if the player input is scissors  
             if computer=="paper": #if the computer input is paper 
                 print("You win") #print you win 
-                player_score+=1
-            else:
-                print("You lose")
-                computer_score+=1
-        elif player.lower()=="paper":
-            if computer=="rock":
-                print("You win")
-                player_score+=1
-            else:
-                print("You lose")
+                player_score+=1 #increment the player score by 1
+            else: #if the computer input is not paper
+                print("You lose") #print you lose
+                computer_score+=1 #increment the computer score by 1 
+        elif player.lower()=="paper":   #if the player input is paper 
+            if computer=="rock":    #if the computer input is rock 
+                print("You win")  #print you win
+                player_score+=1     #increment the player score by 1
+            else:   #if the computer input is not rock 
+                print("You lose")   #print you lose
                 computer_score+=1
         print("Player score: ",player_score)
         print("Computer score: ",computer_score)

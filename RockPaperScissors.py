@@ -56,7 +56,3 @@ def rock_paper_scissors():
             break # break the loop 
 rock_paper_scissors() #call the function rock_paper_scissors    
 
-#output
-#Enter rock, paper or scissors: rock
-#Computer chose:  rock
-#Tie

@@ -1,5 +1,5 @@
-name = int(input()) 
-playlist = input().split(" ") 
+name = int(input())  # get the input from the user  
+playlist = input().split(" ")  # get the input from the user and split it by space  
 
 def count_favourite_singers(playlist): 
     singer_count = {} 

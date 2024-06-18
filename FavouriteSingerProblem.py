@@ -18,8 +18,9 @@ def count_favourite_singers(playlist):  #function to count the favourite singers
     return favourite_singers_count  #return the count of the favourite singers
 
 print(count_favourite_singers(playlist)) #print the count of the favourite singers in the playlist    
-# output: 2
-# input: 5
-#        adele adele adele adele adele
-# output: 5 
-# input: 5
+# Example:
+# Input:
+# 5
+# taylor taylor taylor swift swift
+# Output:
+# 3

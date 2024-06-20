@@ -24,5 +24,7 @@ print(count_favourite_singers(playlist)) #print the count of the favourite singe
 # Output :3
 
 
+# write code for that contain two spaces sepreted interger n, k 
 
+a= input().split(" ") # get the input from the user and split it by space
 

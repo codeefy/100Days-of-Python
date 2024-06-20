@@ -22,4 +22,3 @@ print(count_favourite_singers(playlist)) #print the count of the favourite singe
 # Input :6
 #        adele adele adele taylor taylor taylor
 # Output :3
-# Output : 

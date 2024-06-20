@@ -22,3 +22,5 @@ print(count_favourite_singers(playlist)) #print the count of the favourite singe
 # Input :6
 #        adele adele adele taylor taylor taylor
 # Output :3
+#The first line contains a single integer N denoting the size of the array.  
+#The next line contains space-separated integers denoting the elements of the array.

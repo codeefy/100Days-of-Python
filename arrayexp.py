@@ -21,5 +21,7 @@ my_array = numpy.array([[2, 5],
                         [1, 3],
                         [4, 0]])
 
-print(numpy.min(my_array, axis = 0))
+print(numpy.min(my_array, axis = 0)) # it will print the minimum value of each column in the array 
+# axis = 0 means column wise operation 
+#axis = 1 means row wise operation
 #print(my_array)

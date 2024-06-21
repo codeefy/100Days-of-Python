@@ -14,3 +14,11 @@ arr = input().strip().split(' ') #input is a list of integers separated by space
 result = arrays(arr)
 print(result)"""
 
+import numpy
+
+my_array = numpy.array([[2, 5], 
+                        [3, 7],
+                        [1, 3],
+                        [4, 0]])
+
+#print(numpy.min(my_array, axis = 0))

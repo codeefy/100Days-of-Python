@@ -13,4 +13,4 @@ if __name__ == '__main__': # main function to take input from the user and print
                 arr.append(list(map(int, input().split()))) # appending the input values of the 2D array to the list
         result = task(arr) # calling the function task with the input values
     
-        print(result)
+        print(result) # printing the output

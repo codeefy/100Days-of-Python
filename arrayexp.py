@@ -1,4 +1,4 @@
-# reverse the array and convert it into float array using numpy 
+"""# reverse the array and convert it into float array using numpy 
 
 import numpy
 
@@ -12,4 +12,5 @@ def arrays(arr):  #arr is a list of integers separated by space
 
 arr = input().strip().split(' ') #input is a list of integers separated by space    
 result = arrays(arr)
-print(result)
+print(result)"""
+

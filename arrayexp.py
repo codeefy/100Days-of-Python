@@ -21,4 +21,5 @@ my_array = numpy.array([[2, 5],
                         [1, 3],
                         [4, 0]])
 
-#print(numpy.min(my_array, axis = 0))
+print(numpy.min(my_array, axis = 0))
+#print(my_array)

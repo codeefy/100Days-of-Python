@@ -25,6 +25,6 @@ print(numpy.min(my_array, axis = 0)) # it will print the minimum value of each c
 # axis = 0 means column wise operation 
 #axis = 1 means row wise operation
 #print(my_array)
-print(numpy.min(my_array, axis = 1))       
-print(numpy.min(my_array, axis = None))   
-print(numpy.min(my_array)) 
+print(numpy.min(my_array, axis = 1))    # it will print the minimum value of each row in the array     
+print(numpy.min(my_array, axis = None)) # it will print the minimum value of the entire array 
+print(numpy.min(my_array)) # it will print the minimum value of the entire array 

@@ -1,5 +1,6 @@
 # Link: https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1
 # Title: Trapping Rain Water
+#asked in flipcart amazon google microsoft 
 
 
 # Trapping Rain Water

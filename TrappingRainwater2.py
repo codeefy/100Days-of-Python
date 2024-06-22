@@ -24,16 +24,16 @@ class Solution: # class to calculate the amount of water trapped between the blo
 
         l, r = 0, n - 1 # left pointer is at the start of the array and the right pointer is at the end of the array  
         leftmax, rightmax = arr[l], arr[r] # leftmax is the first element of the array and rightmax is the last element of the array
-        res = 0
+        res = 0 # variable to store the amount of water trapped between the blocks of the array initialized with 0
 
-        while l < r:
-            if leftmax < rightmax:
-                l += 1
-                leftmax = max(leftmax, arr[l])
-                res += leftmax - arr[l]
-            else:
-                r -= 1
-                rightmax = max(rightmax, arr[r])
+        while l < r: # while loop to calculate the amount of water trapped between the blocks of the array
+            if leftmax < rightmax: # if the leftmax is less than the rightmax then move the left pointer 
+                l += 1  # increment the left pointer if the leftmax is less than the rightmax
+                leftmax = max(leftmax, arr[l]) # the leftmax is the maximum of the leftmax and the current element of the array
+                res += leftmax - arr[l] # the amount of water trapped between the blocks of the array is the leftmax minus the current element of the array
+            else: # if the leftmax is greater than the rightmax then move the right pointer
+                r -= 1 # decrement the right pointer if the leftmax is greater than the rightmax
+                rightmax = max(rightmax, arr[r]) # the rightmax is the maximum of the rightmax and the current element of the array
                 res += rightmax - arr[r]
         
         return res

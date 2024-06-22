@@ -12,14 +12,18 @@
 # 10
 # Explanation: The heights are 3 0 0 2 0 4. So we can trap "3*2 units of water" between the 3 and 2, "1 unit" between the 2 and 0 and "3 units" between the 2 and 4. Hence, the total unit of water trapped is 10.
 
-class Solution: 
-    def trappingWater(self, arr, n):
-        # Two-pointer approach
-        if not arr:
-            return 0
+class Solution: # class to calculate the amount of water trapped between the blocks of the array 
+    def trappingWater(self, arr, n): # function to calculate the amount of water trapped between the blocks of the array
+        # Two-pointer approach is used to solve the problem 
+        # two pointer approach is like a sliding window approach where we use two pointers to traverse the array 
+        # where one pointer is at the start of the array and the other pointer is at the end of the array and 
+        # we use these pointers to calculate the amount of water trapped between the blocks of the array 
+        # we move the pointer which has the minimum value and calculate the amount of water trapped between the blocks of the array 
+        if not arr: # if the array is empty then return 0 
+            return 0    
 
-        l, r = 0, n - 1
-        leftmax, rightmax = arr[l], arr[r]
+        l, r = 0, n - 1 # left pointer is at the start of the array and the right pointer is at the end of the array  
+        leftmax, rightmax = arr[l], arr[r] # leftmax is the first element of the array and rightmax is the last element of the array
         res = 0
 
         while l < r:

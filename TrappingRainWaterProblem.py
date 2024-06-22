@@ -12,7 +12,7 @@ def trap(): # function to calculate the amount of water trapped between the bloc
     right[n-1] = arr[n-1] # the last element of the right list is the last element of the array 
     for i in range(1, n): # for loop to calculate the left max of the array 
         left[i] = max(left[i-1], arr[i]) # the left max of the array is the maximum of the previous element and the current element of the array
-    for i in range(n-2, -1, -1):
+    for i in range(n-2, -1, -1): # for loop to calculate the right max of the array 
         right[i] = max(right[i+1], arr[i])
     water = 0
     for i in range(n):

@@ -18,8 +18,8 @@ def trap(): # function to calculate the amount of water trapped between the bloc
         right[i] = max(right[i+1], arr[i]) # the right max of the array is the maximum of the next element and the current element of the array
     #print(left)
     #print(right)    
-    water = 0
-    for i in range(n):
+    water = 0 # variable to store the amount of water trapped between the blocks of the array initialized with 0 
+    for i in range(n): # for loop to calculate the amount of water trapped between the blocks of the array
         water += min(left[i], right[i]) - arr[i]
     return water
 

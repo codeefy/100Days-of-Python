@@ -21,13 +21,10 @@ def trap(): # function to calculate the amount of water trapped between the bloc
     water = 0 # variable to store the amount of water trapped between the blocks of the array initialized with 0 
     for i in range(n): # for loop to calculate the amount of water trapped between the blocks of the array
         water += min(left[i], right[i]) - arr[i] # the amount of water trapped between the blocks of the array is the minimum of the left and right max of the array minus the current element of the array
-    return water
+    return water # returning the amount of water trapped between the blocks of the array
 
 
-
-if __name__ == '__main__':
-    result = trap()
-    print(result)
+print(trap()) # calling the function trap and printing the output
 
 
 

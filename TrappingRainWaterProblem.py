@@ -6,9 +6,9 @@
 def trap(): # function to calculate the amount of water trapped between the blocks of the array 
     n = int(input()) # taking the input value of n 
     arr = list(map(int, input().split())) # taking the input values of the array seperated by space 
-    left = [0] * n
-    right = [0] * n
-    left[0] = arr[0]
+    left = [0] * n # list to store the left max of the array  we initialize it with 0 and the size of the list is n
+    right = [0] * n # list to store the right max of the array we initialize it with 0 and the size of the list is n
+    left[0] = arr[0] # the first element of the left list is the first element of the array
     right[n-1] = arr[n-1]
     for i in range(1, n):
         left[i] = max(left[i-1], arr[i])

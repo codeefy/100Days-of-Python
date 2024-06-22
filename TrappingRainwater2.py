@@ -34,14 +34,14 @@ class Solution: # class to calculate the amount of water trapped between the blo
             else: # if the leftmax is greater than the rightmax then move the right pointer
                 r -= 1 # decrement the right pointer if the leftmax is greater than the rightmax
                 rightmax = max(rightmax, arr[r]) # the rightmax is the maximum of the rightmax and the current element of the array
-                res += rightmax - arr[r]
-        
-        return res
+                res += rightmax - arr[r] # the amount of water trapped between the blocks of the array is the rightmax minus the current element of the array
+         
+        return res # returning the amount of water trapped between the blocks of the array
 
-n=int(input())
-arr=list(map(int,input().split()))
-ob = Solution()
-print(ob.trappingWater(arr, n))
+n=int(input()) # taking the input value of n
+arr=list(map(int,input().split()))  # taking the input values of the array seperated by space
+ob = Solution() # creating an object of the class Solution
+print(ob.trappingWater(arr, n)) # calling the function trappingWater with the input values and printing the output
 # Input:
 # 4
 # 7 4 0 9

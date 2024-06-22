@@ -1,6 +1,11 @@
-def trap():
-    n = int(input())
-    arr = list(map(int, input().split()))
+# water trapped between the blocks of the array is calculated using the below code snippet  
+# The below code snippet is used to calculate the amount of water trapped between the blocks of the array.
+# The input is taken from the user and the output is printed.
+#https://www.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1?page=1&company=Amazon&sortBy=submissions&query=page1companyAmazonsortBysubmissions
+
+def trap(): # function to calculate the amount of water trapped between the blocks of the array 
+    n = int(input()) # taking the input value of n 
+    arr = list(map(int, input().split())) # taking the input values of the array seperated by space 
     left = [0] * n
     right = [0] * n
     left[0] = arr[0]

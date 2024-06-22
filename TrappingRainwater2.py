@@ -20,12 +20,12 @@ class Solution:
         
         return res
 
-# write driver code
-if __name__ == '__main__':
-    t = int(input())
-    for _ in range(t):
-        n = int(input())
-        arr = [int(x) for x in input().strip().split()]
-        ob = Solution()
-        print(ob.trappingWater(arr, n))
-
+n=int(input())
+arr=list(map(int,input().split()))
+ob = Solution()
+print(ob.trappingWater(arr, n))
+# Input:
+# 4
+# 7 4 0 9
+# Output:
+# 10

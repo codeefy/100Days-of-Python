@@ -18,7 +18,7 @@
 
 import string
 def print_rangoli(size):
-    alphabets = string.ascii_lowercase # list of alphabets from a to z   
+    alphabets = string.ascii_lowercase # list of alphabets from a to z  in lower case 
     n = size
     x = list(range(n))
     x = x[:-1]+x[::-1] # list of alphabets from a to z in reverse order x[:-1] is used to remove the last element from the list x[::-1] is used to reverse the list x

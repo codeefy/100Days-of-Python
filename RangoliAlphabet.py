@@ -19,8 +19,8 @@
 import string # importing the string module from python for the list of alphabets from a to z in lower case
 def print_rangoli(size): # function to print the rangoli of alphabets
     alphabets = string.ascii_lowercase # list of alphabets from a to z  in lower case 
-    n = size
-    x = list(range(n))
+    n = size # size of the rangoli 
+    x = list(range(n)) # list of numbers from 0 to n-1  
     x = x[:-1]+x[::-1] # list of alphabets from a to z in reverse order x[:-1] is used to remove the last element from the list x[::-1] is used to reverse the list x
     for i in x:
         print('-'.join(alphabets[n-1:i:-1]+alphabets[i:n]).center(n*4-3, '-')) # printing the alphabets in the required format using join and center function of python 

@@ -43,16 +43,6 @@ if __name__ == '__main__':
 #----e-d-c-d-e----
 #------e-d-e------
 #--------e--------
-# but the code is not working as expected. It is giving the output as:
-"""e-d-c-b-a-b-c-d-e
---e-d-c-b-c-d-e--
-----e-d-c-d-e----
-------e-d-e------
---------e--------
-------e-d-e------
-----e-d-c-d-e----
---e-d-c-b-c-d-e--
-e-d-c-b-a-b-c-d-e"""
 def print_rangoli(size):
     alphabets = string.ascii_lowercase
     n = size
@@ -60,8 +50,8 @@ def print_rangoli(size):
     x = x[:-1]+x[::-1]
     for i in x:
         pattern = '-'.join(alphabets[n-1:i:-1]+alphabets[i:n])
-        print(pattern.center(n*4-3, '-'))
+        print('-'.join(alphabets[n-1:i:-1]+alphabets[i:n]).center(n*4-3, '-'))
 
 if __name__ == '__main__':
     n = int(input())
-    print_rangoli(n)
+    print(range(n))

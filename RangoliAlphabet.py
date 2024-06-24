@@ -34,7 +34,7 @@ if __name__ == '__main__':
     print_rangoli(n)
 #input: 5"""
 #output:
-#--------e--------
+#--------e--------   
 #------e-d-e------
 #----e-d-c-d-e----
 #--e-d-c-b-c-d-e--
@@ -43,15 +43,3 @@ if __name__ == '__main__':
 #----e-d-c-d-e----
 #------e-d-e------
 #--------e--------
-def print_rangoli(size):
-    alphabets = string.ascii_lowercase
-    n = size
-    x = list(range(n))
-    x = x[:-1]+x[::-1]
-    for i in x:
-        pattern = '-'.join(alphabets[n-1:i:-1]+alphabets[i:n])
-        print('-'.join(alphabets[n-1:i:-1]+alphabets[i:n]).center(n*4-3, '-'))
-
-if __name__ == '__main__':
-    n = int(input())
-    print(range(n))

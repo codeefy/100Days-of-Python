@@ -16,8 +16,8 @@
 # 2. Then we need to create a list of alphabets from a to z in reverse order.
 
 
-import string
-def print_rangoli(size):
+import string # importing the string module from python for the list of alphabets from a to z in lower case
+def print_rangoli(size): # function to print the rangoli of alphabets
     alphabets = string.ascii_lowercase # list of alphabets from a to z  in lower case 
     n = size
     x = list(range(n))

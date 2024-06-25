@@ -41,7 +41,7 @@
 #ba
 #c
 #1
-#output
+#output : dac
 #dac because it is the 1st distinct string in the list of strings and it comes first in the alphabetical order. Hence the output is dac.
 #but  the above code is not passing the test cases. So, I will modify the code to pass the test cases. 
 #I will use the set() function to get the unique strings and then sort the unique strings and then print the kth element of the unique strings.

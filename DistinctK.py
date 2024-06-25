@@ -31,3 +31,32 @@
 #2
 #Output
 #a 
+
+def distinctK():
+    # Read the input values
+    N = int(input())
+    strings = [input() for _ in range(N)]  # List comprehension to read N strings from input  and store them in a list 
+    k = int(input())
+
+    # Create a list to store the unique strings
+    unique_strings = []
+
+    # Iterate through the list of strings
+    for string in strings:
+        # If the string is not in the list of unique strings, add it to the list
+        if string not in unique_strings:
+            unique_strings.append(string)
+
+    # If the length of the list of unique strings is less than k, print an empty string
+    if len(unique_strings) < k:
+        print("")
+    # Otherwise, print the kth element of the list of unique strings
+    else:
+        print(unique_strings[k - 1])
+
+distinctK()
+
+
+
+
+

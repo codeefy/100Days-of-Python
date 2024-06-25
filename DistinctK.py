@@ -34,21 +34,6 @@
 # the answer is a as it is the 2nd distinct string in the list of strings and it comes first in the alphabetical order.
 # Hence the output is a.
 # write your code here
-"""
-n = int(input())
-strings = []
-for i in range(n):
-    strings.append(input())
-k = int(input())
-unique_strings = []
-for string in strings:
-    if string not in unique_strings:
-        unique_strings.append(string)
-if len(unique_strings) < k:
-    print("")
-else:
-    print(sorted(unique_strings)[k - 1])"""
-
 #input 
 #3
 #dac
@@ -60,7 +45,6 @@ else:
 #but  the above code is not passing the test cases. So, I will modify the code to pass the test cases. 
 #I will use the set() function to get the unique strings and then sort the unique strings and then print the kth element of the unique strings.
 #I will modify the code as below
-
 n = int(input())
 strings = []
 for i in range(n):
@@ -71,27 +55,6 @@ if len(unique_strings) < k:
     print("")
 else:
     print(sorted(unique_strings)[k - 1])
-
-#input
-#3
-#dac
-#ba
-#c
-#1
-#output
-#dac
-#input
-#6
-#d
-#b
-#c
-#b
-#c
-#a
-#2
-#output
-#a
-
 
 
 

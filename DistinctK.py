@@ -30,6 +30,7 @@
 #a
 #2
 #Output
+#a
 
 # the answer is a as it is the 2nd distinct string in the list of strings and it comes first in the alphabetical order.
 # Hence the output is a.
@@ -45,16 +46,16 @@
 #but  the above code is not passing the test cases. So, I will modify the code to pass the test cases. 
 #I will use the set() function to get the unique strings and then sort the unique strings and then print the kth element of the unique strings.
 #I will modify the code as below
-n = int(input())
-strings = []
-for i in range(n):
-    strings.append(input())
-k = int(input())
-unique_strings = list(set(strings))
-if len(unique_strings) < k:
-    print("")
-else:
-    print(sorted(unique_strings)[k - 1])
+n = int(input()) #number of strings 
+strings = []  #list to store the strings 
+for i in range(n): #loop through the number of strings 
+    strings.append(input()) #append the strings to the list 
+k = int(input())   #read the value of k 
+unique_strings = list(set(strings)) #get the unique strings     
+if len(unique_strings) < k: #if the length of the unique strings is less than k, print an empty string 
+    print("") # print an empty string 
+else: 
+    print(sorted(unique_strings)[k - 1]) #print the kth element of the unique strings.k-1 because the index starts from 0. 
 
 
 

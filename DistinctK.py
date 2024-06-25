@@ -11,12 +11,13 @@
 
 #Output Format: The output contains the kth distinct string. If there are less than k unique string display an empty string.
 
-#approach
-#1. Read the input values
-#2. Create a set to store the unique strings
-#3. Iterate through the strings and add the strings to the set
-#4. If the length of the set is less than k, print an empty string
-#5. Else print the kth element of the set
+#approach:
+#1. Read the input values.
+#2. Create a list to store the unique strings.
+#3. Iterate through the list of strings.
+#4. If the string is not in the list of unique strings, add it to the list.
+#5. If the length of the list of unique strings is less than k, print an empty string.
+#6. Otherwise, print the kth element of the list of unique strings.
 
 #Example
 #Input
@@ -28,3 +29,5 @@
 #c
 #a
 #2
+#Output
+#a 

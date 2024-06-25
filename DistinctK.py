@@ -8,3 +8,10 @@
 #The first line contains an integer N denoting the number of strings.
 #The next N lines contain strings.
 #The next line contains an integer k.
+
+#approach
+#1. Read the input values
+#2. Create a set to store the unique strings
+#3. Iterate through the strings and add the strings to the set
+#4. If the length of the set is less than k, print an empty string
+#5. Else print the kth element of the set

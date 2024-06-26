@@ -11,7 +11,7 @@
 
 #Output Format: The output contains the kth distinct string. If there are less than k unique string display an empty string.
 
-#approach:
+#approach::
 #1. Read the input values.
 #2. Create a list to store the unique strings.
 #3. Iterate through the list of strings.

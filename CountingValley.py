@@ -16,12 +16,13 @@ def countingValleys(Steps, Path): #function to count the valleys
 Steps = int(input()) #read the number of steps  
 Path = input() #read the path 
 
-print(countingValleys(Steps, Path))  # print the number of valleys 
+print(countingValleys(Steps, Path)) # print the number of valleys 
 
 #input
 #8
 #UDDDUDUU
 #output
 #1
+
 
 

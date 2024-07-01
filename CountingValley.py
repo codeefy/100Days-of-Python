@@ -16,6 +16,6 @@ def countingValleys(n, Path): #function to count the valleys
 n = int(input())
 Path = input()
 
-print(countingValleys(n, s))
+print(countingValleys(n, Path))
 
 

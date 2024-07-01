@@ -18,4 +18,10 @@ Path = input() #read the path
 
 print(countingValleys(n, Path))  # print the number of valleys 
 
+#input
+#8
+#UDDDUDUU
+#output
+#1
+
 

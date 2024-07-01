@@ -1,6 +1,6 @@
 #https://www.hackerrank.com/challenges/counting-valleys/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 
-def countingValleys(n, s):
+def countingValleys(n, s): #function to count the valleys   
     # Write your code here
     level = 0
     valleys = 0

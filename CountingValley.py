@@ -2,9 +2,9 @@
 
 def countingValleys(n, s): #function to count the valleys   
     # Write your code here
-    level = 0
-    valleys = 0
-    for step in s:
+    level = 0 #initialize the level to 0   
+    valleys = 0 #initialize the valleys to 0  
+    for step in s:   
         if step == 'U':
             level += 1
             if level == 0:

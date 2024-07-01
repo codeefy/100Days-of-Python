@@ -1,6 +1,6 @@
 #https://www.hackerrank.com/challenges/counting-valleys/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 
-def countingValleys(n, Path): #function to count the valleys   
+def countingValleys(Steps, Path): #function to count the valleys   
     # Write your code here
     level = 0 #initialize the level to 0   
     valleys = 0 #initialize the valleys to 0  
@@ -13,10 +13,10 @@ def countingValleys(n, Path): #function to count the valleys
             level -= 1 #decrement the level by 1
     return valleys #return the number of valleys 
 
-n = int(input()) #read the number of steps  
+Steps = int(input()) #read the number of steps  
 Path = input() #read the path 
 
-print(countingValleys(n, Path))  # print the number of valleys 
+print(countingValleys(Steps, Path))  # print the number of valleys 
 
 #input
 #8

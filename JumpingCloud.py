@@ -30,7 +30,6 @@ import sys
 
 
 
-
 def jumpingOnClouds(c):
     # Write your code here
     if len(c) == 1:

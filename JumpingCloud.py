@@ -49,4 +49,9 @@ if __name__ == '__main__':
 
     result = jumpingOnClouds(c)
 
+    print(result)
+
+#inputupdate
+
+
    

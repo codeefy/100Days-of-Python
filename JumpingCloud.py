@@ -51,7 +51,11 @@ if __name__ == '__main__':
 
     print(result)
 
-#inputupdate
+#input :
+# 7
+# 0 0 1 0 0 1 0
+#output:
+# 4
 
 
    

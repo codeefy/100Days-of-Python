@@ -26,6 +26,8 @@ import sys
 #  If we reach the fourth last cloud, then we return 2.
 #  If we reach the fifth last cloud, then we return 2.
 #  If we reach the sixth last cloud, then we return 3.
+#  If we reach the seventh last cloud, then we return 3.
+
 
 
 

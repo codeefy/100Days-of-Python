@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
     result = jumpingOnClouds(c)
 
-    print(result)
+print(result)
 
 #input :
 # 7

@@ -43,9 +43,9 @@ def jumpingOnClouds(c): # Function to find the minimum number of jumps required 
 
 if __name__ == '__main__': # Main function to take input from the user and call the function 
 
-    n = int(input().strip()) # Taking input from the user  
+    n = int(input().strip()) # Taking input from the user  as an integer
 
-    c = list(map(int, input().rstrip().split()))
+    c = list(map(int, input().rstrip().split())) # it will take the input from the user and split the input and convert it into the list
 
     result = jumpingOnClouds(c)
 

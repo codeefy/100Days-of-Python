@@ -49,7 +49,7 @@ if __name__ == '__main__': # Main function to take input from the user and call 
 
     result = jumpingOnClouds(c) # calling the function and storing the result in the variable result 
  
-print(result)
+print(result) 
 
 #input :
 # 7

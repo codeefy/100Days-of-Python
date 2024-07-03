@@ -48,7 +48,7 @@ if __name__ == '__main__': # Main function to take input from the user and call 
     c = list(map(int, input().rstrip().split())) # it will take the input from the user and split the input and convert it into the list
 
     result = jumpingOnClouds(c)
-
+ 
 print(result)
 
 #input :

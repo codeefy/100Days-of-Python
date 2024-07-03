@@ -33,12 +33,12 @@ import sys
 def jumpingOnClouds(c): # Function to find the minimum number of jumps required to reach the end of the array 
     # Write your code here
     if len(c) == 1: # If we reach the end of the array, then we return 0 
-        return 0
-    if len(c) == 2:
+        return 0 
+    if len(c) == 2: # If we reach the second last cloud, then we return 1 
         return 1
-    if c[2] != 1:
-        return jumpingOnClouds(c[2:]) + 1
-    else:
+    if c[2] != 1: # If we can jump 2 clouds ahead, then we jump 2 clouds ahead and call the function recursively with the remaining clouds
+        return jumpingOnClouds(c[2:]) + 1  # If we cannot jump 2 clouds ahead, then we jump 1 cloud ahead and call the function recursively with the remaining clouds
+    else: 
         return jumpingOnClouds(c[1:]) + 1
 
 if __name__ == '__main__':

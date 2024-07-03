@@ -41,7 +41,7 @@ def jumpingOnClouds(c): # Function to find the minimum number of jumps required 
     else: # If we reach the third last cloud, then we return 1 
         return jumpingOnClouds(c[1:]) + 1 # If we reach the fourth last cloud, then we return 2 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # Main function to take input from the user and call the function 
 
     n = int(input().strip())
 

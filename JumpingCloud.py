@@ -38,7 +38,7 @@ def jumpingOnClouds(c): # Function to find the minimum number of jumps required 
         return 1
     if c[2] != 1: # If we can jump 2 clouds ahead, then we jump 2 clouds ahead and call the function recursively with the remaining clouds
         return jumpingOnClouds(c[2:]) + 1  # If we cannot jump 2 clouds ahead, then we jump 1 cloud ahead and call the function recursively with the remaining clouds
-    else: 
+    else: # If we reach the third last cloud, then we return 1 
         return jumpingOnClouds(c[1:]) + 1
 
 if __name__ == '__main__':

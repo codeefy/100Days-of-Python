@@ -32,7 +32,7 @@ import sys
 
 def jumpingOnClouds(c): # Function to find the minimum number of jumps required to reach the end of the array 
     # Write your code here
-    if len(c) == 1:
+    if len(c) == 1: # If we reach the end of the array, then we return 0 
         return 0
     if len(c) == 2:
         return 1

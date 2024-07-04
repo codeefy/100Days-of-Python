@@ -25,4 +25,3 @@ print(countingValleys(Steps, Path)) # print the number of valleys
 #1
 
 
-

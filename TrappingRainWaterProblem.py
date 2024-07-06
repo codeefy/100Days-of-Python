@@ -27,6 +27,9 @@ if __name__ == '__main__':
     result = trap()
     print(result)
 
+#input
+
+
 
 
 

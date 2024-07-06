@@ -30,6 +30,7 @@ if __name__ == '__main__':
 #input
 #6
 #3 0 0 2 0 4
+#output
 
 
 

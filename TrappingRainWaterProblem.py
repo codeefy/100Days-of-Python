@@ -28,6 +28,7 @@ if __name__ == '__main__':
     print(result)
 
 #input
+#6
 
 
 

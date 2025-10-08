@@ -1,2 +1,2 @@
-# 30Days-of-Python
+# 100Days-of-Python
 Python Coding Challenge
